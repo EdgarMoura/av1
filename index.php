@@ -5,15 +5,14 @@ require_once('config.php'); //Busca a minha configuração de Banco de dados(ws)
 
 $xml = new Xml(); //cria uma instancia do tipo xml, ou seja da classe xml
 
-//$erro = 0; //Incializei a variável erro como 0
 
 if(isset($_GET['id'])){
- $idproduto = $_GET['id']; //buscar id da url quando realiza a busca.  
+ $idlivro = $_GET['id']; //buscar id da url quando realiza a busca.  
 }
  
 $xml->openTag("response"); //Abrir a tag response, ou seja a tag principal do corpo do xml 
 
-	if(empty($idproduto)){ // Verifico se o idproduto está vazio e então exibe uma msg de erro.
+	if(empty($idlivro)){ // Verifico se o idlivro está vazio e então exibe uma msg de erro.
 
 		$msgerro = 'Código inválido!';
 	}
